@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigDarkFish</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            display: flex;
+        }
+        .profile {
+            background-color: #eeeeee;
+            padding: 20px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            flex: 1;
+        }
+        .profile img {
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .profile h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .profile-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .profile-icons img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+        .games {
+            flex: 2;
+            padding: 20px;
+        }
+        .game {
+            display: flex;
+            align-items: center;
+            background-color: #fafafa;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .game img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .game-title {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="profile">
+        <img src="icon_profil.png" alt="Profile Image" id="profileImage" width="100">
+        <h2 id="profileName">BigDarkFish</h2>
+        <div class="profile-icons">
+            </a>
+        </div>
+    </div>
+    <div class="games">
+        <div class="game" id="game1">
+            <img src="https://via.placeholder.com/50" alt="Game Image">
+            <div class="game-title">Escape From The FOREST!</div>
+        </div>
+        <div class="game">
+            <img src="https://via.placeholder.com/50" alt="Game Image">
+            <div class="game-title">nom de jeu</div>
+        </div>
+        <div class="game">
+            <img src="https://via.placeholder.com/50" alt="Game Image">
+            <div class="game-title">nom de jeu</div>
+        </div>
+        <div class="game">
+            <img src="https://via.placeholder.com/50" alt="Game Image">
+            <div class="game-title">nom de jeu</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('game1').addEventListener('click', function() {
+        window.open('https://bigdarkfish.github.io/Portfolio/', '_blank');
+    });
+
+    document.getElementById('profileImage').addEventListener('click', function() {
+        window.open('https://github.com/BigDarkFish', '_blank');
+    });
+
+    document.getElementById('profileName').addEventListener('click', function() {
+        window.open('https://github.com/BigDarkFish', '_blank');
+    });
+</script>
+
+</body>
+</html>
